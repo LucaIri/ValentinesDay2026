@@ -32,7 +32,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     background-color: #007bff;
-    color: white;
+    color: rgb(211, 211, 211);
 }
 
 button:hover {
