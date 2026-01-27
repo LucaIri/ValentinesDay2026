@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My App</title>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <title>Be My Valentine 💕</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Hi Miruna ❤❤❤</h1>
-    </header>
 
-    <main>
-        <p>This is a simple boilerplate project.</p>
-        <button id="myButton">Click me</button>
-    </main>
+  <!-- Screen 1 -->
+  <div id="screen-1" class="screen active">
+    <h1 id="header-text">Please pet Goose!</h1>
 
-    <footer>
-        <small>&copy; 2026 My App</small>
-    </footer>
+    <img
+      id="goose"
+      src="assets/goose_idle.svg"
+      alt="Goose the dog"
+    />
+  </div>
 
-    <!-- JavaScript -->
-    <script src="app.js" defer></script>
+  <!-- Screen 2 -->
+  <div id="screen-2" class="screen hidden">
+    <img
+      id="goose-scroll"
+      src="assets/goose_scroll.svg"
+      alt="Goose with scroll"
+    />
+  </div>
+
+  <!-- Screen 3 -->
+  <div id="screen-3" class="screen hidden">
+    <div id="letter">
+      <p>
+        <!-- placeholder text -->
+        Happy Valentine’s Day 💖
+      </p>
+
+      <div class="buttons">
+        <button id="yes-btn">Yes 💕</button>
+        <button id="no-btn">No 😈</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bark-sound" src="assets/bark.mp3"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
