@@ -51,3 +51,56 @@ body {
 #goose:hover {
   transform: scale(1.05);
 }
+
+/* Letter card */
+#letter {
+  background: #fff8f4; /* off-white */
+  padding: 30px 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4a2a2a;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: letterIn 0.6s ease forwards;
+}
+
+@keyframes letterIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#yes-btn {
+  background: #ff8fb1;
+  color: white;
+}
+
+#no-btn {
+  background: #ccc;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

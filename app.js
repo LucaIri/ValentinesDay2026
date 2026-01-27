@@ -21,3 +21,12 @@ goose.addEventListener("click", () => {
     screen2.classList.remove("hidden");
   }, 500);
 });
+
+const gooseScroll = document.getElementById("goose-scroll");
+const screen3 = document.getElementById("screen-3");
+
+// Click scroll → reveal letter
+gooseScroll.addEventListener("click", () => {
+  screen2.classList.add("hidden");
+  screen3.classList.remove("hidden");
+});
