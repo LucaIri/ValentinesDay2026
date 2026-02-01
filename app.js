@@ -68,12 +68,16 @@ gooseScroll.addEventListener("click", () => {
 const noBtn = document.getElementById("no-btn");
 
 noBtn.addEventListener("click", () => {
+  const padding = 40;
 
-  const maxX = 500;
-  const maxY = 300;
+  const maxX = (window.innerWidth - noBtn.offsetWidth - padding) / 2;
+  const maxY = (window.innerHeight - noBtn.offsetHeight - padding) / 2;
 
-  const randomX = Math.random() * maxX;
-  const randomY = Math.random() * maxY;
+  // const minX = -1 * maxX;
+  // const minY = -1 * maxY;
+
+  const randomX = padding + Math.random() * (maxX - padding);
+  const randomY = padding + Math.random() * (maxY - padding);
 
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
