@@ -46,8 +46,6 @@ body {
   margin-top: 200px; /* pushes slightly below center */
   cursor: pointer;
   transition: transform 0.3s ease;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
   background-color: transparent;
 }
 
