@@ -43,9 +43,11 @@ body {
 #goose,
 #goose-scroll {
   width: 300px;
-  margin-top: 120px; /* pushes slightly below center */
+  margin-top: 200px; /* pushes slightly below center */
   cursor: pointer;
-  /*transition: transform 0.3s ease;*/
+  transition: transform 0.3s ease;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
   background-color: transparent;
 }
 
