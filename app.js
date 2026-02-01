@@ -76,6 +76,32 @@ noBtn.addEventListener("click", () => {
   const randomX = Math.random() * maxX;
   const randomY = Math.random() * maxY;
 
+  console.log(randomX, randomY);
+
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
+});
+
+
+const yesBtn = document.getElementById("yes-btn");
+
+const assets = [
+  "assets/heart_1.svg",
+  "assets/tulip.svg",
+  "assets/rose.svg",
+];
+
+yesBtn.addEventListener("click", () => {
+  setInterval(() => {
+    const img = document.createElement("img");
+    img.src = assets[Math.floor(Math.random() * assets.length)];
+    img.classList.add("falling");
+
+    img.style.left = Math.random() * window.innerWidth + "px";
+    img.style.animationDuration = 2 + Math.random() * 3 + "s";
+
+    document.body.appendChild(img);
+
+    setTimeout(() => img.remove(), 6000);
+  }, 200);
 });

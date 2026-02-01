@@ -29,6 +29,10 @@ body {
   display: flex;
 }
 
+/* #screen-3 {
+  position: relative;
+} */
+
 /* Header */
 #header-text {
   margin-top: 60px;
@@ -101,10 +105,24 @@ button {
 }
 
 #no-btn {
+  position: fixed;
   background: #ccc;
-  position: absolute;
 }
 
 button:hover {
   transform: scale(1.1);
+}
+
+.falling {
+  position: absolute;
+  top: -50px;
+  width: 40px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
 }
