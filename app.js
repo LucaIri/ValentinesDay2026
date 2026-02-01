@@ -1,3 +1,5 @@
+let barkInterval = null;
+
 const goose = document.getElementById("goose");
 const headerText = document.getElementById("header-text");
 
@@ -17,6 +19,13 @@ setInterval(() => {
 goose.addEventListener("click", () => {
   headerText.style.opacity = 0;
 
+  if (!barkInterval) {
+    barkInterval = setInterval(() => {
+      barkSound1.currentTime = 0;
+      barkSound1.play();
+    }, 1200);
+  }
+
   setTimeout(() => {
     screen1.classList.add("hidden");
     screen2.classList.remove("hidden");
@@ -28,7 +37,11 @@ const screen3 = document.getElementById("screen-3");
 
 // Click scroll → reveal letter
 gooseScroll.addEventListener("click", () => {
-  barkSound1.pause();
   screen2.classList.add("hidden");
   screen3.classList.remove("hidden");
+
+  if (barkInterval) {
+    clearInterval(barkInterval);
+    barkInterval = null;
+  }
 });
