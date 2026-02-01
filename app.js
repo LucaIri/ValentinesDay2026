@@ -10,7 +10,7 @@ const barkSound = document.getElementById("bark-sound");
 setInterval(() => {
   barkSound.currentTime = 0;
   barkSound.play();
-}, 3000);
+}, 1000);
 
 // Click Goose → Screen 2
 goose.addEventListener("click", () => {
