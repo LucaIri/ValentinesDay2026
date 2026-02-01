@@ -70,14 +70,14 @@ const noBtn = document.getElementById("no-btn");
 noBtn.addEventListener("click", () => {
   const padding = 40;
 
-  const maxX = (window.innerWidth - noBtn.offsetWidth - padding) ;
-  const maxY = (window.innerHeight - noBtn.offsetHeight - padding) ;
+  const maxX = window.innerWidth - noBtn.offsetWidth - padding;
+  const maxY = window.innerHeight - noBtn.offsetHeight - padding;
 
   // const minX = -1 * maxX;
   // const minY = -1 * maxY;
 
-  const randomX = padding + Math.random() * (maxX - padding) - 200;
-  const randomY = padding + Math.random() * (maxY - padding) - 200;
+  const randomX = padding + Math.random() * (maxX - padding);
+  const randomY = padding + Math.random() * (maxY - padding);
 
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
