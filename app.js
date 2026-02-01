@@ -19,6 +19,7 @@ const barkSound1 = document.getElementById("bark-sound-1");
 // c lick button to begin
 start.addEventListener("click", () => {
   headerText.style.opacity = 0;
+  start.style.opacity = 0;
 
   if (!barkInterval) {
     barkInterval = setInterval(() => {
@@ -26,7 +27,7 @@ start.addEventListener("click", () => {
       barkSound1.play();
     }, 1200);
   }
-  
+
   setTimeout(() => {
     screen0.classList.add("hidden");
     screen1.classList.remove("hidden");
