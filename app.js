@@ -76,8 +76,8 @@ noBtn.addEventListener("click", () => {
   // const minX = -1 * maxX;
   // const minY = -1 * maxY;
 
-  const randomX = Math.random() * (maxX - padding);
-  const randomY = Math.random() * (maxY - padding);
+  const randomX = Math.random() * maxX;
+  const randomY = Math.random() * maxY;
 
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
