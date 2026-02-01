@@ -45,7 +45,7 @@ body {
   width: 300px;
   margin-top: 120px; /* pushes slightly below center */
   cursor: pointer;
-  transition: transform 0.3s ease;
+  /*transition: transform 0.3s ease;*/
   background-color: transparent;
 }
 
