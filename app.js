@@ -68,7 +68,7 @@ gooseScroll.addEventListener("click", () => {
 const noBtn = document.getElementById("no-btn");
 
 noBtn.addEventListener("click", () => {
-  const padding = 40;
+  const padding = 100;
 
   const maxX = window.innerWidth - noBtn.offsetWidth - padding;
   const maxY = window.innerHeight - noBtn.offsetHeight - padding;
