@@ -8,11 +8,11 @@ const screen2 = document.getElementById("screen-2");
 
 const barkSound1 = document.getElementById("bark-sound-1");
 
-// Optional bark loop
-setInterval(() => {
-  barkSound1.currentTime = 0;
-  barkSound1.play();
-}, 1200);
+// // Optional bark loop
+// setInterval(() => {
+//   barkSound1.currentTime = 0;
+//   barkSound1.play();
+// }, 1200);
 
 
 // Click Goose → Screen 2
