@@ -73,17 +73,6 @@ noBtn.addEventListener("click", () => {
   const maxX = window.innerWidth - noBtn.offsetWidth - padding;
   const maxY = window.innerHeight - noBtn.offsetHeight - padding;
 
-  let outMaxX = maxX;
-  let outMaxY = maxY;
-
-  let viewportWidth = window.innerWidth;
-  console.log("The current window inner width is: " + viewportWidth + "px");
-  console.log("The current MAX width is: " + outMaxX + "px");
-  let viewportHeight = window.innerHeight;
-  console.log("The current window inner hei8ght is: " + viewportHeight + "px");
-  console.log("The current MAX height is: " + outMaxY + "px");
-
-
   // const minX = -1 * maxX;
   // const minY = -1 * maxY;
 
