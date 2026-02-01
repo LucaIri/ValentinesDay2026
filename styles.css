@@ -82,6 +82,7 @@ body {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  font-family: 'Georgia', serif;
   gap: 20px;
 }
 
