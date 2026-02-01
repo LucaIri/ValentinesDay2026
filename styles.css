@@ -61,6 +61,7 @@ body {
   max-width: 500px;
   text-align: center;
   font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #4a2a2a;
 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -95,7 +96,7 @@ button {
 
 #yes-btn {
   background: #ff8fb1;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #no-btn {
