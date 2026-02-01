@@ -70,8 +70,8 @@ const noBtn = document.getElementById("no-btn");
 noBtn.addEventListener("click", () => {
   const padding = 40;
 
-  const maxX = (window.innerWidth - noBtn.offsetWidth - padding) / 2;
-  const maxY = (window.innerHeight - noBtn.offsetHeight - padding) / 2;
+  const maxX = (window.innerWidth - noBtn.offsetWidth - padding) ;
+  const maxY = (window.innerHeight - noBtn.offsetHeight - padding) ;
 
   // const minX = -1 * maxX;
   // const minY = -1 * maxY;
