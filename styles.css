@@ -105,8 +105,10 @@ button {
 }
 
 #no-btn {
-  position: fixed;
+  position: absolute;
+  left: calc(100% + 24px);
   background: #ccc;
+  transition: left 0.15s ease, top 0.15s ease;
 }
 
 button:hover {
