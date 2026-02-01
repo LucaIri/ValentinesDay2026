@@ -49,9 +49,9 @@ body {
   background-color: transparent;
 }
 
-#goose:hover {
+/* #goose:hover {
   transform: scale(1.05);
-}
+} */
 
 /* Letter card */
 #letter {
