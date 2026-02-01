@@ -114,7 +114,8 @@ button:hover {
 }
 
 .falling {
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
   top: -50px;
   width: 40px;
   animation: fall linear forwards;

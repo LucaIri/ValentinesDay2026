@@ -73,8 +73,11 @@ noBtn.addEventListener("click", () => {
   const maxX = window.innerWidth - noBtn.offsetWidth - padding;
   const maxY = window.innerHeight - noBtn.offsetHeight - padding;
 
-  const randomX = Math.random() * maxX;
-  const randomY = Math.random() * maxY;
+  const minX = padding;
+  const minY = padding;
+
+  const randomX = minX + Math.random() * (maxX - minX);
+  const randomY = minY + Math.random() * (maxY - minY);
 
   console.log(randomX, randomY);
 
